@@ -1227,8 +1227,8 @@ def main(args):
             StableDiffusion3Pipeline.save_lora_weights(
                 output_dir,
                 transformer_lora_layers=transformer_lora_layers_to_save,
-                text_encoder_lora_layers=text_encoder_one_lora_layers_to_save,
-                text_encoder_2_lora_layers=text_encoder_two_lora_layers_to_save,
+                # text_encoder_lora_layers=text_encoder_one_lora_layers_to_save,
+                # text_encoder_2_lora_layers=text_encoder_two_lora_layers_to_save,
             )
 
     def load_model_hook(models, input_dir):
